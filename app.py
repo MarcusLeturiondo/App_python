@@ -5,7 +5,7 @@ def listar(nomes):
         print nome
 
 def cadastrar(nomes):
-    print 'Digite seu nome: '
+    print 'Digite o nome: '
     nome = raw_input()
     nomes.append(nome)
 
@@ -16,7 +16,13 @@ def procurar(nomes):
     if(nome in nomes):
         print 'O %s  ja esta cadastrado' % (nome)
     else:
-        print 'O %s ainda nao foi cadastrado' % (nome)
+        print 'O %s ainda nao foi cadastrado, pressione 1 para cadastrar' % (nome)
+        cadastro = raw_input()
+
+        if(cadastro == '1'):
+            nomes.append(nome)
+            print 'O %s foi cadastrado com sucesso' % (nome)
+
 
 def remover(nomes):
     print 'Qual nome voce quer excluir?'
