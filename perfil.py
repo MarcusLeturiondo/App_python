@@ -9,7 +9,7 @@ class Perfil(object):
         self.curtidas = 0
 
     def imprimir(self):
-            print "Nome : %s, Telefone: %s, Empresa %s" % (self.nome, self.telefone, self.empresa)
+        print "Nome : %s, Telefone: %s, Empresa %s" % (self.nome, self.telefone, self.empresa)
 
     def curtir(self):
-            self.curtidas+=1
+        self.curtidas+=1
