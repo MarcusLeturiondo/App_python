@@ -13,3 +13,9 @@ class Perfil(object):
 
     def curtir(self):
         self.curtidas+=1
+
+    def obter_curtidas(self):
+        return self.__curtidas
+
+    def obter_creditos(self):
+        return self.__curtidas * 10.0
